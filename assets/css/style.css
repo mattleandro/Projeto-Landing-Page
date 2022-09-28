@@ -89,7 +89,6 @@ p {
 
 .section {
     min-height: 100vh;
-    min-width: 500px;
 }
 
 .menu {
@@ -202,6 +201,36 @@ p {
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    border: 0.1rem solid var(--light-gray-color);
+    text-align: left;
+}
+
+tfoot td, table td{
+    background-color: var(--light-gray-color);
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
 a {
     text-decoration: none;
 }
